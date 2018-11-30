@@ -1,22 +1,16 @@
-# Weekend Challenge
+The steps taken to setup this application were:
 
-This weekend challenge is intended for use at the end, or in the middle of, engineering project 1.  Developers can choose which of 4 projects they build.
+Setup virtual environment
+- virtualenv -p /usr/local/bin/python3 env
 
-### Instructions
+Activate virtual environment
+source env/bin/activate
 
-1. Fork and clone this repository.
-2. Choose one of the following projects to build an application
-  * Use the same language you've been working with for the last two weeks
-  * You can choose whether or not to use the same framework / libraries that you've been working with for the last two weeks 
+Install Django
+- pip install django
 
-3. *Immediately* open a Pull Request back to this base GitHub repository (**it will automatically update when you push changes**)
-4. Build the project!
+Make django project directory structure
+- django-admin startproject Chitter_project
 
-
-#### 1. [RPS](https://github.com/makersacademy/rps-challenge)
-
-#### 2. [Chitter (without users)](https://github.com/makersacademy/chitter-challenge)
-
-#### 3. [Chitter (with user sign up/log in)](https://github.com/makersacademy/chitter-challenge)
-
-#### 4. [Instagram](https://github.com/makersacademy/instagram-challenge)
+Run the webserver
+- python manage.py runserver

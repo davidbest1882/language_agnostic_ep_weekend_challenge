@@ -1,0 +1,15 @@
+{% extends "chitter/base.html" %}
+{% block content %}
+    {% for peep in peeps %}
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <a class="mr-2" href="#">{{ peep.author }}</a>
+          <small class="text-muted">{{ peep.date_posted }}</small>
+        </div>
+        <h2><a class="article-title" href="#">{{ peep.title }}</a></h2>
+        <p class="article-content">{{ peep.content }}</p>
+      </div>
+    </article>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,8 @@
+
+db/
+env/
+__pycache__/
+migrations/
+.vscode/settings.json
+Pipfile.lock
+Pipfile
